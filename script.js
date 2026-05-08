@@ -1,21 +1,14 @@
-// Simple Navigation Scroll Effect
-window.addEventListener('scroll', () => {
-    const nav = document.querySelector('nav');
-    if (window.scrollY > 50) {
-        nav.style.background = '#0f173d';
-        nav.style.padding = '10px 0';
-    } else {
-        nav.style.background = '#1a2a6c';
-        nav.style.padding = '20px 0';
-    }
+// Function para sa Mobile Menu Toggle
+const burger = document.getElementById('burgerMenu');
+const nav = document.getElementById('navLinks');
+
+burger.addEventListener('click', () => {
+    // Simple alert muna para mapatunayan na gumagana ang JS mo
+    alert("Jhervie, gumagana na ang script.js file mo!");
+    
+    // Pwede mong dagdagan ng code dito para sa mobile menu animation
+    nav.classList.toggle('nav-active');
 });
 
-// Contact Form Alert
-const contactForm = document.getElementById('contact-form');
-if(contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        alert('Thank you, Jhervie! Your message has been sent (simulation).');
-        contactForm.reset();
-    });
-}
+// Console log para sa debugging (makikita sa Inspect Element)
+console.log("Jhervie Cuizon Portfolio System 2026: Online");
